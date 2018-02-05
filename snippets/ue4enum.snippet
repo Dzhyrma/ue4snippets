@@ -14,13 +14,6 @@
     </Header>
     <Snippet>
       <Declarations>
-		<Literal Editable="true">
-          <ID>comment</ID>
-          <ToolTip>Enum comment</ToolTip>
-          <Default>Comment</Default>
-          <Function>
-          </Function>
-        </Literal>
         <Literal Editable="true">
           <ID>namespace</ID>
           <ToolTip>Enum namespace name</ToolTip>
@@ -43,13 +36,10 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[/**
- * $comment$ 
- */
-UENUM()
-enum E$namespace$
+      <Code Language="cpp"><![CDATA[UENUM()
+enum class E$namespace$ : uint8
 {
-	$elem1name$, /**< $elem1comment$ */
+	$elem1name$,
 	$select$ $end$
 };]]></Code>
     </Snippet>

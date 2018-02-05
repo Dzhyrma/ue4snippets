@@ -15,13 +15,6 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>comment</ID>
-          <ToolTip>Interface comment</ToolTip>
-          <Default>Comment</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
           <ID>name</ID>
           <ToolTip>Interface name</ToolTip>
           <Default>Foo</Default>
@@ -29,10 +22,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[/**
- * $comment$
- */
-UINTERFACE()
+      <Code Language="cpp"><![CDATA[UINTERFACE()
 class U$name$ : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()

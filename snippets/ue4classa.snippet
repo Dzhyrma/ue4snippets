@@ -14,13 +14,6 @@
     </Header>
     <Snippet>
       <Declarations>
-        <Literal Editable="true">
-          <ID>comment</ID>
-          <ToolTip>Class comment</ToolTip>
-          <Default>Comment</Default>
-          <Function>
-          </Function>
-        </Literal>
 		<Literal Editable="true">
           <ID>className</ID>
           <ToolTip>Class name</ToolTip>
@@ -36,20 +29,23 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[/**
- * $comment$
- */
-UCLASS(BlueprintType, Blueprintable)
+      <Code Language="cpp"><![CDATA[UCLASS(BlueprintType, Blueprintable)
 class A$className$ : public A$baseClassName$
 {
-	GENERATED_UCLASS_BODY()
+	GENERATED_BODY()
 	
-public:
+public: // Constructors and Destructor
+	A$className$();
+	~A$className$();
+	
+public: // UPROPERTY
 	$selected$ $end$
-	
-protected:
 
-private:
+public: // UFUNCTION
+
+public: // C++ Methods
+
+private: // C++ Fields
 
 };
 ]]></Code>

@@ -14,13 +14,6 @@
     </Header>
     <Snippet>
       <Declarations>
-		<Literal Editable="true">
-          <ID>comment</ID>
-          <ToolTip>Property comment</ToolTip>
-          <Default>Comment</Default>
-          <Function>
-          </Function>
-        </Literal>
         <Literal Editable="true">
           <ID>category</ID>
           <ToolTip>UI category name</ToolTip>
@@ -57,10 +50,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp"><![CDATA[/** 
- * $comment$ 
- */
-UPROPERTY($defaultsAttribute$, $instanceAttribute$, Category="$category$")
+      <Code Language="cpp"><![CDATA[UPROPERTY($defaultsAttribute$, $instanceAttribute$, Category="$category$")
 $type$ $name$;
 $selected$ $end$]]></Code>
     </Snippet>
